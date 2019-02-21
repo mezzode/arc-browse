@@ -1,65 +1,69 @@
 {
-    "name": "arc-browse",
-    "displayName": "arc browse",
-    "description": "Adds a command to `arc browse` the current file, for quick access by users of Phabricator and Arcanist.",
-    "version": "0.0.1",
-    "license": "GPL-3.0-or-later",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/mezzode/arc-browse.git"
+  "name": "arc-browse",
+  "displayName": "arc browse",
+  "description": "Adds a command to `arc browse` the current file, for quick access by users of Phabricator and Arcanist.",
+  "version": "0.0.1",
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mezzode/arc-browse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mezzode/arc-browse/issues"
+  },
+  "engines": {
+    "vscode": "^1.30.2"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "arcanist",
+    "arc",
+    "phabricator"
+  ],
+  "activationEvents": [
+    "onCommand:extension.arc-browse"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "arc browse configuration",
+      "properties": {
+        "arc-browse.useRelative": {
+          "type": "boolean",
+          "default": true,
+          "markdownDescription": "Whether to `arc browse` using relative path to the file (from the workspace root) rather than absolute."
+        }
+      }
     },
-    "bugs": {
-        "url": "https://github.com/mezzode/arc-browse/issues"
-    },
-    "engines": {
-        "vscode": "^1.30.2"
-    },
-    "categories": [
-        "Other"
-    ],
-    "keywords": [
-        "arcanist",
-        "arc",
-        "phabricator"
-    ],
-    "activationEvents": [
-        "onCommand:extension.arc-browse"
-    ],
-    "main": "./out/extension.js",
-    "contributes": {
-        "configuration": {
-            "type": "object",
-            "title": "arc browse configuration",
-            "properties": {
-                "arc-browse.useRelative": {
-                    "type": "boolean",
-                    "default": true,
-                    "markdownDescription": "Whether to `arc browse` using relative path to the file (from the workspace root) rather than absolute."
-                }
-            }
-        },
-        "commands": [{
-            "command": "extension.arc-browse",
-            "title": "Browse",
-            "category": "Arcanist"
-        }]
-    },
-    "scripts": {
-        "vscode:prepublish": "yarn run compile",
-        "compile": "tsc -p ./",
-        "watch": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "yarn run compile && node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "^3.3.1",
-        "vscode": "^1.1.28",
-        "tslint": "^5.12.1",
-        "@types/node": "^10.12.21",
-        "@types/mocha": "^2.2.42"
-    },
-    "icon": "images/icon.png",
-    "galleryBanner": {
-        "theme": "dark"
-    }
+    "commands": [
+      {
+        "command": "extension.arc-browse",
+        "title": "Browse",
+        "category": "Arcanist"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "yarn run compile && node ./node_modules/vscode/bin/test"
+  },
+  "dependencies": {
+    "vscode": "^1.1.29"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^10.12.21",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.1"
+  },
+  "icon": "images/icon.png",
+  "galleryBanner": {
+    "theme": "dark"
+  }
 }

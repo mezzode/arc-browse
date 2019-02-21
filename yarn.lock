@@ -1347,7 +1347,7 @@ vinyl@^2.0.0, vinyl@^2.0.1, vinyl@^2.0.2:
     remove-trailing-separator "^1.0.1"
     replace-ext "^1.0.0"
 
-vscode@^1.1.28:
+vscode@^1.1.29:
   version "1.1.29"
   resolved "https://registry.yarnpkg.com/vscode/-/vscode-1.1.29.tgz#bef148f5eb88b966e425b7fa4287ff4b8b04e017"
   dependencies:

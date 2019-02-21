@@ -1,15 +1,23 @@
 {
-    "rules": {
-        "no-string-throw": true,
-        "no-unused-expression": true,
-        "no-duplicate-variable": true,
-        "curly": true,
-        "class-name": true,
-        "semicolon": [
-            true,
-            "always"
-        ],
-        "triple-equals": true
-    },
-    "defaultSeverity": "warning"
+  "defaultSeverity": "error",
+  "extends": ["tslint:latest", "tslint:all"],
+  "jsRules": {},
+  "rules": {
+    "quotemark": [true, "single", "avoid-template", "avoid-escape"],
+    "file-name-casing": false,
+    "interface-name": [true, "never-prefix"],
+    "no-null-keyword": false,
+    "typedef": false,
+    "no-import-side-effect": [
+      true,
+      { "ignore-module": "(\\.html|\\.css|milligram)$" }
+    ],
+    "no-empty-interface": false,
+    "newline-per-chained-call": false,
+    "no-magic-numbers": false,
+    "prefer-function-over-method": true,
+    "arrow-parens": [true, "ban-single-arg-parens"],
+    "completed-docs": false
+  },
+  "rulesDirectory": []
 }

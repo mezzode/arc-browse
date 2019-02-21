@@ -1,4 +1,9 @@
 {
-    // Turn off tsc task auto detection since we have the necessary tasks as npm scripts
-    "typescript.tsc.autoDetect": "off"
+  // Turn off tsc task auto detection since we have the necessary tasks as npm scripts
+  "typescript.tsc.autoDetect": "off",
+  "prettier.endOfLine": "lf",
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "all",
+  "prettier.tslintIntegration": true,
+  "editor.formatOnSave": true
 }
