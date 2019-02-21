@@ -23,3 +23,8 @@ install:
 
 script:
   - yarn test --silent
+
+# workaround for hanging windows build, see
+# https://travis-ci.community/t/timeout-after-build-finished-and-succeeded/1336/2
+env:
+  - YARN_GPG=no
