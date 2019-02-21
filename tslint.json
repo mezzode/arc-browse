@@ -3,6 +3,7 @@
   "extends": ["tslint:latest", "tslint:all"],
   "jsRules": {},
   "rules": {
+    "no-implicit-dependencies": [true, "dev"],
     "quotemark": [true, "single", "avoid-template", "avoid-escape"],
     "file-name-casing": false,
     "interface-name": [true, "never-prefix"],
