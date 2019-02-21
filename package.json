@@ -3,7 +3,7 @@
   "displayName": "arc browse",
   "publisher": "mezzode",
   "description": "Adds a command to `arc browse` the current file, for quick access by users of Phabricator and Arcanist.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "GPL-3.0-or-later",
   "repository": {
     "type": "git",
@@ -70,6 +70,6 @@
   ],
   "icon": "images/icon.png",
   "galleryBanner": {
-    "theme": "dark"
+    "theme": "light"
   }
 }
