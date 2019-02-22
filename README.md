@@ -1,7 +1,7 @@
 # `arc browse` for VSCode
 
-[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/mezzode.arc-browse.svg?style=flat-square)](https://marketplace.visualstudio.com/items?itemName=mezzode.arc-browse)
-[![Travis (.com)](https://img.shields.io/travis/com/mezzode/arc-branch.svg?style=flat-square)](https://travis-ci.com/mezzode/arc-browse)
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/mezzode.arc-browse.svg?style=flat-square&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=mezzode.arc-browse)
+[![Travis (.com)](https://img.shields.io/travis/com/mezzode/arc-browse.svg?style=flat-square)](https://travis-ci.com/mezzode/arc-browse)
 
 This extension adds a command to `arc browse` the current file, for quick access by users of [Phabricator](https://www.phacility.com/phabricator/) and [Arcanist](https://www.phacility.com/phabricator/arcanist/).
 
@@ -24,4 +24,4 @@ All trademarks are property of their respective owners.
 
 ## Credits
 
-Icon by GorillaWarfare ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0))
+Icon is a recolor derived from an image by GorillaWarfare ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0)), and is also published under the [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) license.
