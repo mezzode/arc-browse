@@ -25,7 +25,7 @@ export const activate = (context: ExtensionContext) => {
     const path = getPath(useRelative);
 
     const term = window.createTerminal('arc browse');
-    term.sendText(`arc browse ${path}`);
+    term.sendText(`arc browse "${path}"`);
     term.show();
   });
 
